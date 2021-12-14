@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+  mc:
+    container_name: "minecraft_server"
+    image: itzg/minecraft-server
+    stdin_open: true
+    tty: true
+    restart: always
+    volumes:
+    - "./data:/data"
+    environment:
+      EULA: "TRUE"
+      MAX_MEMORY: "4G"
+      TYPE: "PAPER"
+    ports:
+    - "35565:25565"
+    - "19132:19132/udp"
