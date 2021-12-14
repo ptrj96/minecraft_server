@@ -13,6 +13,7 @@ services:
       EULA: "TRUE"
       MAX_MEMORY: "4G"
       TYPE: "PAPER"
+      OPS: "ptrj96"
     ports:
-    - "35565:25565"
+    - "25565:25565"
     - "19132:19132/udp"
